@@ -33,7 +33,7 @@
 
     <script id="acts_template" type="text/html">
       <!-- TODO It's not January forever -->
-      <h2 class="month-title">January 2017</h2>
+      <h2 class="month-title">Announcements</h2>
       {{#rows}}
       <div class="item">
         <div class="item-header">
@@ -41,18 +41,18 @@
         </div>
         <small>
           <span class="meta item-branch">{{branch}} Branch</span> —
-          <span class="meta item-date">{{Amount}}</span>
+          <span class="meta item-date"><p>{{date}}</p></span>
         </small>
-        <h2 class="item-description">{{Source}}</h2>
+        <h2 class="item-description">{{description}}</h2>
         <p>{{detail}}</p>
-        <small><a href="{{ID}}">Article</a></small>
+        <small><a href="{{article}}">Article</a></small>
       </div>
       {{/rows}}
     </script>
 
     <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
-      var URL = '1YrVWGBfCZn6tDQ-HMGo5e8n64R8rof73WC3yzA7jcGs'
+      var URL = '2PACX-1vRaUxlDfK76mBQ1qV3v8LaENqYplWYE5SOcoJvTWZloCIiXD4D83o8bHuvlhfKmtAFGyIn3JKTfVOjM'
       Tabletop.init({ key: URL, callback: showInfo, simpleSheet: true })
     })
 
